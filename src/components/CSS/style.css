@@ -1,0 +1,141 @@
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #e0f7fa; 
+}
+
+.box {
+  position: relative;
+  width: 100%;
+  max-width: 1490px; 
+  height: 750px; 
+  padding: 20px;
+  background-color: skyblue;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.inputData {
+  margin-bottom: 15px;
+}
+
+.searchfeild {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid black;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: black; 
+  color: white;  
+}
+
+.info {
+  text-align: center;
+  color: black; 
+}
+
+.location {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.temp {
+  font-size: 48px;
+  margin: 5px 0;
+  color: white; 
+}
+
+.tempminmax {
+  font-size: 16px;
+  margin: 5px 0;
+  opacity: 0;
+  color: white; 
+}
+
+.additional-info {
+  margin-top: 20px;
+}
+
+.additional-info p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: black;
+}
+
+.forecast {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.forecast-item {
+  width: 100%;
+  max-width: 150px;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  margin: 0 5px 10px;
+}
+
+.unit-toggle {
+  margin: 10px 0;
+  max-height: 50px; /* Set a maximum height for the button container */
+  overflow: hidden; /* Hide overflow if buttons exceed the maximum height */
+}
+
+.unit-toggle button {
+  background-color: transparent;
+  border: 1px solid rgb(4, 4, 4);
+  color: rgb(4, 0, 0);
+  padding: 5px 10px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.unit-toggle button:hover {
+  background-color: white;
+  color: #333;
+}
+
+/* .wave-one,
+.wave-two,
+.wave-three {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  background-color: #fff;
+}
+
+.wave-one {
+  animation: waveAnimation 2s linear infinite;
+}
+
+.wave-two {
+  animation: waveAnimation 2s linear infinite 0.5s;
+}
+
+.wave-three {
+  animation: waveAnimation 2s linear infinite 1s;
+} */
+
+@keyframes waveAnimation {
+  0% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-15px);
+  }
+  100% {
+      transform: translateY(0);
+  }
+}
